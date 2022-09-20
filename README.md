@@ -13,7 +13,7 @@ Version : 1.0 - GOLD\
 Date last version : 03/15/2022\
 
 ## Building
-### Create an executable
+## Create an executable
 ```sh
 $ Open GeoStorm.sln > Click on green arrow button
 ```
