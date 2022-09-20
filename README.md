@@ -6,7 +6,7 @@
 **This project aims at recreating a 2D game in C# language with Raylib library for the visuals.**<br/>
 **The second goal of this project was to create my very first game in C#.**
 
-## Infomation
+## Information
 Project start : 03/9/2022\
 Project end : 03/15/2022\
 Version : 1.0 - GOLD\
