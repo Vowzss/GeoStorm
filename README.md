@@ -23,31 +23,31 @@ $ Open GeoStorm.sln > Click on green arrow button
 ```
 ## Game Preview
 # MAIN MENU
-- ![PNG](./screenshots/mainMenu.png)
+- ![PNG](./Showcase/mainMenu.png)
 # RULES MENU
-- ![PNG](./screenshots/rules.png)
+- ![PNG](./Showcase/rules.png)
 
 # PREVIEW PISTOL WEAPON
-- ![PNG](./screenshots/pistol.png)
+- ![PNG](./Showcase/pistol.png)
 # PREVIEW SHOTGUN WEAPON
-- ![PNG](./screenshots/shotgun.png)
+- ![PNG](./Showcase/shotgun.png)
 # PREVIEW LASER WEAPON
-- ![PNG](./screenshots/laser.png)
+- ![PNG](./Showcase/laser.png)
 # PREVIEW LAUNCHER WEAPON (FOLLOW ENEMY)
-- ![PNG](./screenshots/launcher.png)
+- ![PNG](./Showcase/launcher.png)
 # PREVIEW CATAPULTE WEAPON (EXPLOSIONS)
-- ![PNG](./screenshots/catapulte.png)
+- ![PNG](./Showcase/catapulte.png)
 
 # DUMMY ENNEMY
-- ![PNG](./screenshots/dummy.png)
+- ![PNG](./Showcase/dummy.png)
 # STALKER ENEMY
-- ![PNG](./screenshots/stalker.png)
+- ![PNG](./Showcase/stalker.png)
 # SPINNER ENEMY
-- ![PNG](./screenshots/spinner.png)
+- ![PNG](./Showcase/spinner.png)
 
 # SHOP MENU
-- ![PNG](./screenshots/shop.png)
+- ![PNG](./Showcase/shop.png)
 # DEBUG MENU
-- ![PNG](./screenshots/debugMenu.png)
+- ![PNG](./Showcase/debugMenu.png)
 # PREVIEW GAMEPLAY
-- ![PNG](./screenshots/game.png)
+- ![PNG](./Showcase/game.png)
