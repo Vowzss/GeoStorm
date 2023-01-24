@@ -67,7 +67,7 @@ namespace GeoStorm.Core
             spriteData = SpritesData.gruntSprite;
             scoreGiven = EntitiesStats.gruntEnemyStats.scoreGiven;
             moneyGiven = EntitiesStats.gruntEnemyStats.moneyGiven;
-            float rot = (float)MathE.rand.Next(360) * MathF.PI / 180.0f;
+            float rot = (float)Maths.rand.Next(360) * MathF.PI / 180.0f;
             velocity = new Vector2(MathF.Cos(rot), MathF.Sin(rot)) * acceleration;
         }
 

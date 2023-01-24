@@ -20,9 +20,9 @@ namespace GeoStorm.Core
                 waveCount++;
                 for (int i = 0; i < waveCount*2+2; i++)
                 {
-                    Vector2 randomPos = MathE.RandomVector(GetScreenWidth(), GetScreenHeight());
-                    Vector2 randomPos2 = MathE.RandomVector(GetScreenWidth(), GetScreenHeight());
-                    Vector2 randomPos3 = MathE.RandomVector(GetScreenWidth(), GetScreenHeight());
+                    Vector2 randomPos = Maths.RandomVector(GetScreenWidth(), GetScreenHeight());
+                    Vector2 randomPos2 = Maths.RandomVector(GetScreenWidth(), GetScreenHeight());
+                    Vector2 randomPos3 = Maths.RandomVector(GetScreenWidth(), GetScreenHeight());
 
                     data.AddEnemyDelayed(new Grunt(randomPos, 2));
                     data.AddEnemyDelayed(new Shuriken(randomPos2, 2));

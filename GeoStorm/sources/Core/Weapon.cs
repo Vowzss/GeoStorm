@@ -43,7 +43,7 @@ namespace GeoStorm.Core
 
         public void Update(GameInputs inputs, EntitiesManager data, List<Event> events)
         {
-            position = MathExtend.MathE.Rotate(new Vector2(player.collisionRadius * 1.2f, 0) + player.position, player.position, MathF.Atan2(inputs.shootTarget.Y - player.position.Y, inputs.shootTarget.X - player.position.X));
+            position = MathExtend.Maths.Rotate(new Vector2(player.collisionRadius * 1.2f, 0) + player.position, player.position, MathF.Atan2(inputs.shootTarget.Y - player.position.Y, inputs.shootTarget.X - player.position.X));
             rotation = MathF.Atan2(inputs.shootTarget.Y - player.position.Y, inputs.shootTarget.X - player.position.X);
 
             Renderer.DrawSprites(position, spriteData, 5, rotation, YELLOW);

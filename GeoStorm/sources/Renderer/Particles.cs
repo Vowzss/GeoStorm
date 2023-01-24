@@ -46,9 +46,9 @@ namespace GeoStorm.Render
                 {
                     for (int i = 0; i < 100; i++)
                     {
-                        float rotation = (float)MathE.rand.Next(360) * MathF.PI / 180.0f;
+                        float rotation = (float)Maths.rand.Next(360) * MathF.PI / 180.0f;
 
-                        particles.Add(new Particle(killed.enemy.position, rotation, 20, killed.enemy.color, new Vector2(MathF.Cos(rotation), MathF.Sin(rotation)), MathE.rand.Next(50, 250), 1.5f, ParticleShape.Line));
+                        particles.Add(new Particle(killed.enemy.position, rotation, 20, killed.enemy.color, new Vector2(MathF.Cos(rotation), MathF.Sin(rotation)), Maths.rand.Next(50, 250), 1.5f, ParticleShape.Line));
                         //Console.WriteLine(killed.enemy.position);
                     }
                 }
@@ -57,12 +57,12 @@ namespace GeoStorm.Render
                 {
                     for (int i = 0; i < 100; i++)
                     {
-                        float rotation = (float)MathE.rand.Next(360) * MathF.PI / 180.0f;
-                        float dir = (float)MathE.rand.Next(360) * MathF.PI / 180.0f;
+                        float rotation = (float)Maths.rand.Next(360) * MathF.PI / 180.0f;
+                        float dir = (float)Maths.rand.Next(360) * MathF.PI / 180.0f;
 
 
-                        particles.Add(new Particle(explosion.mineBullet.position, rotation, 20, MathE.ColorLerp(i / 100.0f, Color.YELLOW, Color.RED)
-                            , new Vector2(MathF.Cos(dir), MathF.Sin(dir)), MathE.rand.Next(180, 550), 4.4f, ParticleShape.Circle));
+                        particles.Add(new Particle(explosion.mineBullet.position, rotation, 20, Maths.ColorLerp(i / 100.0f, Color.YELLOW, Color.RED)
+                            , new Vector2(MathF.Cos(dir), MathF.Sin(dir)), Maths.rand.Next(180, 550), 4.4f, ParticleShape.Circle));
                         //Console.WriteLine(killed.enemy.position);
                     }
 
@@ -77,10 +77,10 @@ namespace GeoStorm.Render
             if(Vector2.Distance(new Vector2(), inputs.moveAxis) > 0.2f)
             {
                 
-                float rot = (float)MathE.rand.Next((int)(data.player.rotation * 180.0f / MathF.PI) - 100, (int)(data.player.rotation * 180.0f / MathF.PI) + 100) * MathF.PI / 180.0f;
-                float colorLerp = (float)MathE.rand.Next(10) / 10.0f;
-                particles.Add(new Particle(data.player.position - Vector2.Normalize(data.player.velocity) * 15, rot, 12, MathE.ColorLerp(colorLerp, Color.ORANGE, Color.RED),
-                    new Vector2(MathF.Cos(rot), MathF.Sin(rot)), MathE.rand.Next(30, 150), 3.0f, ParticleShape.Square));
+                float rot = (float)Maths.rand.Next((int)(data.player.rotation * 180.0f / MathF.PI) - 100, (int)(data.player.rotation * 180.0f / MathF.PI) + 100) * MathF.PI / 180.0f;
+                float colorLerp = (float)Maths.rand.Next(10) / 10.0f;
+                particles.Add(new Particle(data.player.position - Vector2.Normalize(data.player.velocity) * 15, rot, 12, Maths.ColorLerp(colorLerp, Color.ORANGE, Color.RED),
+                    new Vector2(MathF.Cos(rot), MathF.Sin(rot)), Maths.rand.Next(30, 150), 3.0f, ParticleShape.Square));
                 
             }
         }

@@ -4,7 +4,7 @@ using Raylib_cs;
 
 namespace GeoStorm.MathExtend
 {
-    class MathE
+    class Maths
     {
         static public Random rand = new Random();
 

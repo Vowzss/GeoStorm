@@ -43,10 +43,10 @@ namespace GeoStorm.Core
                     {
                         foreach (Enemy enemy in data.enemies)
                         {
-                            Vector2 proj = MathExtend.MathE.Projection(enemy.position, laser.position,
-                                MathExtend.MathE.Rotate(new Vector2(10000, 0) + laser.position, laser.position, laser.rotation));
+                            Vector2 proj = MathExtend.Maths.Projection(enemy.position, laser.position,
+                                MathExtend.Maths.Rotate(new Vector2(10000, 0) + laser.position, laser.position, laser.rotation));
                             if(Vector2.Distance(enemy.position, proj) <= enemy.collisionRadius + 4 && Vector2.Dot(enemy.position - laser.position,
-                                MathExtend.MathE.Rotate(new Vector2(10000, 0) + laser.position, laser.position, laser.rotation)) >= 0)
+                                MathExtend.Maths.Rotate(new Vector2(10000, 0) + laser.position, laser.position, laser.rotation)) >= 0)
                             {
                                 enemy.TakeDamage(bullet, events);
                             }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Numerics;
-using static GeoStorm.MathExtend.MathE;
+using static GeoStorm.MathExtend.Maths;
 using GeoStorm.Render;
 using static Raylib_cs.Color;
 

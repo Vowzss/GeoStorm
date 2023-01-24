@@ -4,7 +4,7 @@ using System;
 using Raylib_cs;
 using static Raylib_cs.Raylib;
 using static Raylib_cs.Color;
-using static GeoStorm.MathExtend.MathE;
+using static GeoStorm.MathExtend.Maths;
 using GeoStorm.Core;
 using GeoStorm.Interfaces;
 
